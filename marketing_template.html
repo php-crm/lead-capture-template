@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:150px;
+  font-size:20px;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 12px;
+  padding: 20px;
+  margin: auto;
+  width:300px;
+ 
+  background-color:orange;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <form action="submit_phpcrm_form.php" method="post">
+     <input type="text" id="fname" name="name" placeholder="Enter Full Name." required>
+    <input type="text" id="email" name="email" placeholder="Enter Email Address." required>
+    <input type="text" id="phone" name="phone" placeholder="Enter Phone Number." >
+	<textarea name="comment" id="comment" placeholder="Enter Your Message." rows="5" required></textarea>
+    <center><input type="submit" value="Submit"></center>
+  </form>
+</div>
+</body>
+</html>
